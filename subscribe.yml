@@ -1,0 +1,11 @@
+---
+- hosts: rhel7
+  remote_user: schram
+  become: yes
+  tasks:
+    - name: register and autoattach channels
+      redhat_subscription:
+        state: present
+        username: geerten.schram@hcs-company.com
+        password: GheqwsCZkR
+        autosubscribe: true

@@ -1,0 +1,6 @@
+---
+- hosts: rhel7
+  remote_user: schram
+  tasks:
+    - name: test verbinding
+      ping:
